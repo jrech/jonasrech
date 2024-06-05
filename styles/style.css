@@ -30,6 +30,8 @@ a {
   color: #fefefe;
 }
 
+
+
 @font-face {
   font-family: "Jakarta";
   src: url("../webfonts/PlusJakartaSans-Regular.ttf");
@@ -55,6 +57,8 @@ html {
   font-size: 18px;
 }
 
+
+
 body {
   margin: 0;
   font-family: "Jakarta", sans-serif;
@@ -69,6 +73,29 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.scroll-down-icon {
+  font-size: 2rem;
+  animation: bounce 2s infinite;
+  position: absolute;
+  right: 5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
 .btn-secondary {
   background-color: #040404;
   border-color: #040404;
@@ -81,14 +108,7 @@ body {
   border-color: #333333;
 }
 
-.scroll-down-icon {
-  font-size: 2rem;
-  animation: bounce 2s infinite;
-  position: absolute;
-  right: 5rem;
-  top: 50%;
-  transform: translateY(-50%);
-} 
+
 .main-container {
   max-width: 1440px;
   margin: 0 auto;
@@ -150,20 +170,7 @@ body {
   border-radius: 24px; 
 }
 
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-10px);
-  }
-  60% {
-    transform: translateY(-5px);
-  }
+
 }
 .normal {
   font-size: 1rem !important;
