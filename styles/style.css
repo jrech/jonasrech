@@ -77,7 +77,7 @@ body {
 
 .btn-secondary:hover,
 .btn-secondary:focus {
-  background-color: #333333; /* Slightly lighter color for hover effect */
+  background-color: #333333; 
   border-color: #333333;
 }
 
@@ -88,31 +88,29 @@ body {
   right: 5rem;
   top: 50%;
   transform: translateY(-50%);
-} /* Center and set max width for the main container */
+} 
 .main-container {
   max-width: 1440px;
   margin: 0 auto;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  background-color: #fefefe; /* Ensure the background color is set */
-  border-radius: 8px; /* Optional: Add rounded corners to the container */
-}
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  background-color: #fefefe; 
+  border-radius: 8px; 
 
-/* Container for each image with overlay */
+
 .overlay-container {
   position: relative;
   display: block;
-  border-radius: 24px; /* Add border-radius here for the container */
-  overflow: hidden; /* Ensure the border-radius applies to the overlay */
-}
+  border-radius: 24px; 
+  overflow: hidden; 
 
 .overlay-container img {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 24px; /* Add border-radius here for the image */
+  border-radius: 24px; 
 }
 
-/* Overlay effect */
+
 .overlay {
   position: absolute;
   top: 0;
@@ -126,7 +124,7 @@ body {
   align-items: center;
   opacity: 0;
   color: #fefefe;
-  border-radius: 24px; /* Add border-radius here for the overlay */
+  border-radius: 24px;
 }
 
 .overlay-text {
@@ -137,7 +135,7 @@ body {
 }
 
 .overlay-container:hover .overlay {
-  background-color: rgba(0, 0, 0, 0.6); /* Darker opacity on hover */
+  background-color: rgba(0, 0, 0, 0.6); 
   opacity: 1;
 }
 
@@ -145,11 +143,11 @@ body {
   opacity: 1;
 }
 
-/* Remove specific styles for smaller mockups */
+
 .small-mockup img {
   width: 100%;
   height: auto;
-  border-radius: 24px; /* Ensure small mockups maintain border radius */
+  border-radius: 24px; 
 }
 
 @keyframes bounce {
