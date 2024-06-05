@@ -3,111 +3,214 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jonas Rech Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./styles/bootstrap.css" />
+    <link rel="stylesheet" href="./styles/fontawesome.all.min.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/slick.css" />
+    <title>Jonas Rech</title>
   </head>
+
   <body>
-    <header>
-      <nav class="navbar">
-        <!-- <div></div> -->
-        <ul>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">Resume</a></li>
-          <li><a href="#">About me</a></li>
-          <li><a href="#">Photography</a></li>
-        </ul>
-        <button type="button" class="contact-btn">Get in touch</button>
-      </nav>
-    </header>
+    <div class="main-container">
+      <header class="border-bottom sticky-top bg-white">
+        <nav class="gp-x navbar navbar-expand-lg navbar-light py-3">
+          <button
+            class="navbar-toggler px-2"
+            type="button"
+            onclick="toggleNav()"
+          >
+            <i class="fa fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav py-4 py-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Me</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <a href="mailto:jonasrech@gmail.com" class="btn btn-secondary px-4"
+              >Get In Touch</a
+            >
+          </div>
+        </nav>
+      </header>
 
-    <section class="intro">
-      <h1>Jonas Rech</h1>
-      <p>Product designer.</p>
-    </section>
+      <main>
+        <section class="py-6">
+          <div
+            class="gp-x d-flex align-items-center justify-content-between position-relative"
+          >
+            <div>
+              <h1 class="fw-bold display-1 mb-0">Jonas Rech</h1>
+              <h3>Product designer.</h3>
+            </div>
+            <div class="scroll-down-icon">
+              <i class="fa fa-arrow-down"></i>
+            </div>
+          </div>
+        </section>
 
-    <section class="project">
-      <h2>Mobile App design</h2>
-      <div class="project-item">
-        <img src="img/plantedapp.png" alt="Planted App Design" />
-        <div>
-          <h3>Planted.</h3>
-          <h4>online store app design</h4>
-          <p>
-            Created an intuitive plant store app, offering a wide range of
-            indoor and outdoor plants, personalized care advice, and seamless
-            delivery services for plant enthusiasts.
-          </p>
+        <div class="py-4"></div>
+        <section class="py-4">
+          <div class="gp-x">
+            <h4 class="fw-semibold mb-5">Mobile App design.</h4>
+            <div class="py-5"></div>
+          </div>
+          <div
+            class="d-flex flex-column flex-md-row gap-4 align-items-center mb-5"
+          >
+            <div class="col pe-2">
+              <img class="img-fluid" src="./images/img1.png" alt="" />
+            </div>
+            <div class="gp-end col pb-5">
+              <h1 class="fw-bold mb-0">Planted.</h1>
+              <h5 class="text-muted">mobile shop design</h5>
+              <div class="py-2"></div>
+              <div class="col-md-10">
+                Created an intuitive plant store app, offering a wide range of
+                indoor and outdoor plants, personalized care advice, and
+                seamless delivery services for plant enthusiasts.
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column flex-md-row gap-4 align-items-center">
+            <div class="gp-start col pb-5 order-2 order-md-1">
+              <h1 class="fw-bold mb-0">MelodyHub</h1>
+              <h5 class="text-muted">music app design</h5>
+              <div class="py-2"></div>
+              <div class="col-md-10">
+                Designed a dynamic music app that offers seamless streaming,
+                personalized playlists, and an extensive library of songs to
+                enhance every listening experience.
+              </div>
+            </div>
+            <div class="col order-1 order-md-2 ps-2">
+              <img class="img-fluid" src="./images/img2.png" alt="" />
+            </div>
+          </div>
+        </section>
+        <section class="">
+          <div class="gp-x">
+            <h4 class="fw-semibold mb-5">Webdesign</h4>
+            <div class="py-4"></div>
+          </div>
+          <div class="gp-x col-md-5 mx-auto py-5 text-center">
+            <h1 class="fw-bold">Vanilla</h1>
+            <h6 class="text-muted">vegetable drink producer</h6>
+            <div>
+              Developed an engaging online store for a vegetable drink brand,
+              offering a variety of healthy beverages, seamless shopping
+              experience, and comprehensive nutritional insights.
+            </div>
+            <div class="py-5"></div>
+          </div>
+          <div>
+            <img class="img-fluid w-100" src="./images/vanila.png" alt="" />
+          </div>
+        </section>
+        <div class="py-5"></div>
+        <section id="uiGallery" class="py-6">
+          <div class="gp-x">
+            <h4 class="fw-semibold mb-5">UI Mockups</h4>
+            <div class="py-4"></div>
+          </div>
+          <div class="container">
+            <div class="row g-4 justify-content-center">
+              <div class="col-md-6 position-relative">
+                <div class="overlay-container">
+                  <img class="img-fluid" src="./images/gal1.png" alt="" />
+                  <div class="overlay">
+                    <div class="overlay-text">Calorie Tracker</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 position-relative">
+                <div class="overlay-container">
+                  <img class="img-fluid" src="./images/gal2.png" alt="" />
+                  <div class="overlay">
+                    <div class="overlay-text">Bank App Mockup</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 position-relative">
+                <div class="overlay-container">
+                  <img class="img-fluid" src="./images/gal3.png" alt="" />
+                  <div class="overlay">
+                    <div class="overlay-text">Music Player</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 position-relative">
+                <div class="overlay-container">
+                  <img class="img-fluid" src="./images/gal4.png" alt="" />
+                  <div class="overlay">
+                    <div class="overlay-text">Weather App</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="py-5"></div>
+        <section class="gp-x">
+          <div
+            class="col-md-9 mx-auto d-flex flex-column flex-md-row gap-5 justify-content-center align-items-center"
+          >
+            <div>
+              <img class="img-fluid" src="./images/person.png" alt="" />
+            </div>
+            <div class="">
+              <h4 class="fw-bold mb-4">About me</h4>
+              <div class="">
+                I am a Czech product designer focused on beautiful, intuitive
+                UIs blending aesthetics with functionality for effective user
+                experiences.
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="py-5"></div>
+        <section class="gp-x py-7 bg-theme-dark text-white">
+          <h1 class="mb-4 fw-bold text-center">Let's work together.</h1>
+          <div
+            class="large d-flex flex-column flex-md-row justify-content-center gap-1 gap-md-5"
+          >
+            <div>+420 775 254 684</div>
+            <div>
+              <a href="mailto:jonasrech@gmail.com">jonasrech@gmail.com</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer mt-auto py-4 bg-white text-dark">
+        <div
+          class="gp-x d-flex flex-column flex-md-row gap-4 align-items-center justify-content-around"
+        >
+          <h2 class="fw-bold mb-0">Let's connect on</h2>
+          <div class="d-flex gap-5">
+            <a href="#"><img src="./images/x-icon.png" alt="" height="25" /></a>
+            <a href="https://www.linkedin.com/in/jonas-rech-1b87b589/"
+              ><img src="./images/linkedin-icon.png" alt="" height="25"
+            /></a>
+            <a href="https://www.instagram.com/jonasrech"
+              ><img src="./images/instagram-icon.png" alt="" height="25"
+            /></a>
+          </div>
         </div>
-      </div>
+      </footer>
+    </div>
 
-      <div class="project-item">
-        <img src="img/melodyhubapp.png" alt="MelodyHub App Design" />
-        <div>
-          <h3>MelodyHub</h3>
-          <h4>music app design</h4>
-          <p>
-            Designed a dynamic music app that offers seamless streaming,
-            personalized playlists, and an extensive library of songs to enhance
-            every listening experience.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="webdesign">
-      <h2>Webdesign</h2>
-      <div class="project-item">
-        <img src="img/vanillaweb.png" alt="Vanilla Website Design" />
-        <div>
-          <h3>Vanilla</h3>
-          <h4>vegetable drink producer</h4>
-          <p>
-            Developed an engaging online store for a vegetable drink brand,
-            offering a variety of healthy beverages, seamless shopping
-            experience, and comprehensive nutritional insights.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="ui-mockups">
-      <h2>UI Mockups</h2>
-      <div class="mockup-grid">
-        <img src="img/calories.jpg" alt="Mockup 1" />
-        <img src="img/cards.jpg" alt="Mockup 2" />
-        <img src="img/player.png" alt="Mockup 3" />
-        <img src="img/weatherapp.png" alt="Mockup 4" />
-      </div>
-    </section>
-
-    <section class="about">
-      <img src="img/profile.png" alt="Jonas Rech" />
-      <div>
-        <h2>About me</h2>
-        <p>
-          I am a Czech product designer focused on beautiful, intuitive UIs
-          blending aesthetics with functionality for effective user experiences.
-        </p>
-      </div>
-    </section>
-
-    <section class="contact">
-      <h2>Let's work together.</h2>
-      <p>+420 775 254 684</p>
-      <p>jonasrech@gmail.com</p>
-    </section>
-
-    <footer>
-      <p>Let's connect on</p>
-      <div class="social-icons">
-        <a href="#"><img src="img/x.png" alt="Twitter" /></a>
-        <a href="#"><img src="img/linkined.png" alt="LinkedIn" /></a>
-        <a href="#"><img src="img/instagram.png" alt="instagram" /></a>
-      </div>
-    </footer>
+    <script src="./scripts/fontawesome.all.min.js"></script>
+    <script src="./scripts/bootstrap.js"></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
