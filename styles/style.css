@@ -51,10 +51,6 @@ a {
   font-style: normal;
 }
 
-html {
-  font-size: 18px;
-}
-
 body {
   margin: 0;
   font-family: "Jakarta", sans-serif;
@@ -206,4 +202,9 @@ body {
   #uiGallery img {
     width: 100% !important;
   }
+}
+
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
 }
