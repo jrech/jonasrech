@@ -1,3 +1,183 @@
+/* Main container with max-width */
+.main-container {
+  max-width: 1440px;
+  margin: 0 auto; /* Center the container */
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fefefe;
+  border-radius: 8px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  margin-top: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+h4,
+h5,
+h6 {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Specific section adjustments for consistent spacing */
+.section-title {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Additional spacing adjustments if needed */
+.gp-x,
+.gp-end,
+.gp-start {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+@media (max-width: 768px) {
+  .gp-x,
+  .gp-md-x {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .gp-end,
+  .gp-start {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Zoom-in effect for uiGallery images */
+.overlay-container {
+  position: relative;
+  display: block;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.overlay-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  transition: transform 0.5s ease; /* Add transition for zoom effect */
+}
+
+.overlay-container:hover img {
+  transform: scale(1.1); /* Zoom-in effect */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  color: #fefefe;
+  border-radius: 24px;
+}
+
+.overlay-text {
+  font-size: 1.5rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.overlay-container:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+}
+
+.overlay-container:hover .overlay-text {
+  opacity: 1;
+}
+
+/* Zoom-in effect for webdesign section image */
+.webdesign-container {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin-top: 2rem; /* Adjust margin as needed */
+}
+
+.webdesign-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease; /* Add transition for zoom effect */
+}
+
+.webdesign-container:hover img {
+  transform: scale(1.05); /* Zoom-in effect */
+}
+
+/* Button animation */
+.btn-secondary {
+  background-color: #040404;
+  border-color: #040404;
+  color: #fefefe;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Add transition for the hover effect */
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #333333;
+  border-color: #333333;
+  transform: scale(1.05); /* Scale up the button slightly */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+}
+
+/* Social icons hover animation */
+.social-icons a {
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover,
+.social-icons a:focus {
+  transform: scale(1.1); 
+  
+}
+
+
+
 .bg-theme-dark {
   background-color: #48423b;
 }
@@ -10,19 +190,6 @@
 .py-7 {
   padding-top: 7rem;
   padding-bottom: 7rem;
-}
-
-.gp-x {
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
-.gp-end {
-  padding-right: 5rem;
-}
-
-.gp-start {
-  padding-left: 5rem;
 }
 
 a {
@@ -67,7 +234,7 @@ body {
 
 .scroll-down-icon {
   font-size: 2rem;
-  animation: bounce 2s infinite;
+  animation: bounce 4s infinite; /* Adjust the duration to 4 seconds */
   position: absolute;
   right: 5rem;
   top: 50%;
@@ -90,121 +257,42 @@ body {
   }
 }
 
-.btn-secondary {
-  background-color: #040404;
-  border-color: #040404;
-  color: #fefefe;
-}
-
-.btn-secondary:hover,
-.btn-secondary:focus {
-  background-color: #333333;
-  border-color: #333333;
-}
-
-.main-container {
-  max-width: 1440px;
-  margin: 0 auto;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: #fefefe;
-  border-radius: 8px;
-}
-
-.overlay-container {
-  position: relative;
-  display: block;
-  border-radius: 24px;
-  overflow: hidden;
-}
-
-.overlay-container img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 24px;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0);
-  transition: background-color 0.5s ease;
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0;
-  color: #fefefe;
-  border-radius: 24px;
+  flex-wrap: wrap;
 }
 
-.overlay-text {
-  font-size: 1.5rem;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.overlay-container:hover .overlay {
-  background-color: rgba(0, 0, 0, 0.6);
-  opacity: 1;
-}
-
-.overlay-container:hover .overlay-text {
-  opacity: 1;
-}
-
-.small-mockup img {
+.footer .footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   width: 100%;
-  height: auto;
-  border-radius: 24px;
+  max-width: 1440px;
+  padding: 0 1rem;
 }
 
-.normal {
-  font-size: 1rem !important;
+.footer h2 {
+  margin: 0;
 }
 
-.small {
-  font-size: 0.875rem !important;
+.footer .social-icons {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
 }
 
-.smaller {
-  font-size: 0.75rem !important;
+.footer .social-icons img {
+  height: 25px;
+}
+/* More noticeable zoom effect for phone number and email */
+.large a {
+  display: inline-block; /* Ensure the links are treated as block elements for better transformation */
+  transition: transform 0.3s ease, color 0.3s ease; /* Add transition for zoom effect */
 }
 
-.large {
-  font-size: 1.25rem !important;
-}
-
-.larger {
-  font-size: 1.5rem !important;
-}
-
-@media (max-width: 768px) {
-  .gp-x,
-  .gp-md-x {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  .gp-end {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  .gp-start {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  #uiGallery img {
-    width: 100% !important;
-  }
-}
-
-html {
-  font-size: 18px;
-  scroll-behavior: smooth;
-}
+.large a:hover,
+.large a:focus {
+  transform: scale(1.1); /* Zoom-in effect */
+  
