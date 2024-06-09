@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .main-container {
   max-width: 1440px;
   margin: 0 auto;
@@ -285,8 +289,4 @@ body {
 .large a:hover,
 .large a:focus {
   transform: scale(1.1);
-}
-.large a {
-html {
-  scroll-behavior: smooth;
 }
