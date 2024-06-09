@@ -287,6 +287,6 @@ body {
   transform: scale(1.1);
 }
 .large a {
-html 
-scroll-behavior: smooth;
-  }
+html {
+  scroll-behavior: smooth;
+}
