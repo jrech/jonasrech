@@ -1,7 +1,6 @@
-
 .main-container {
   max-width: 1440px;
-  margin: 0 auto; 
+  margin: 0 auto;
 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: #fefefe;
@@ -46,7 +45,6 @@ p {
   margin-bottom: 0.5rem;
 }
 
-
 .section-title {
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -56,7 +54,6 @@ p {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
 }
-
 
 .gp-x,
 .gp-end,
@@ -78,7 +75,6 @@ p {
   }
 }
 
-
 .overlay-container {
   position: relative;
   display: block;
@@ -91,10 +87,11 @@ p {
   width: 100%;
   height: auto;
   border-radius: 24px;
-  transition: transform 0.5s ease; 
+  transition: transform 0.5s ease;
+}
 
 .overlay-container:hover img {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .overlay {
@@ -129,39 +126,38 @@ p {
   opacity: 1;
 }
 
-
 .webdesign-container {
   position: relative;
   display: block;
   overflow: hidden;
-  margin-top: 2rem; 
+  margin-top: 2rem;
+}
 
 .webdesign-container img {
   display: block;
   width: 100%;
   height: auto;
-  transition: transform 0.5s ease; 
-
-.webdesign-container:hover img {
-  transform: scale(1.05); 
+  transition: transform 0.5s ease;
 }
 
+.webdesign-container:hover img {
+  transform: scale(1.05);
+}
 
 .btn-secondary {
   background-color: #040404;
   border-color: #040404;
   color: #fefefe;
-  transition: transform 0.3s ease, background-color 0.3s ease; 
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus {
   background-color: #333333;
   border-color: #333333;
-  transform: scale(1.05); 
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
 
 .social-icons a {
   transition: transform 0.3s ease;
@@ -228,7 +224,7 @@ body {
 
 .scroll-down-icon {
   font-size: 2rem;
-  animation: bounce 4s infinite; 
+  animation: bounce 4s infinite;
   position: absolute;
   right: 5rem;
   top: 50%;
@@ -282,11 +278,11 @@ body {
 }
 
 .large a {
-  display: inline-block; 
-  transition: transform 0.3s ease, color 0.3s ease; 
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .large a:hover,
 .large a:focus {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
