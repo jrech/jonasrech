@@ -1,7 +1,7 @@
-/* Main container with max-width */
+
 .main-container {
   max-width: 1440px;
-  margin: 0 auto; /* Center the container */
+  margin: 0 auto; 
 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: #fefefe;
@@ -46,7 +46,7 @@ p {
   margin-bottom: 0.5rem;
 }
 
-/* Specific section adjustments for consistent spacing */
+
 .section-title {
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -57,7 +57,7 @@ p {
   margin-bottom: 1rem;
 }
 
-/* Additional spacing adjustments if needed */
+
 .gp-x,
 .gp-end,
 .gp-start {
@@ -78,7 +78,7 @@ p {
   }
 }
 
-/* Zoom-in effect for uiGallery images */
+
 .overlay-container {
   position: relative;
   display: block;
@@ -91,11 +91,10 @@ p {
   width: 100%;
   height: auto;
   border-radius: 24px;
-  transition: transform 0.5s ease; /* Add transition for zoom effect */
-}
+  transition: transform 0.5s ease; 
 
 .overlay-container:hover img {
-  transform: scale(1.1); /* Zoom-in effect */
+  transform: scale(1.1); 
 }
 
 .overlay {
@@ -130,53 +129,48 @@ p {
   opacity: 1;
 }
 
-/* Zoom-in effect for webdesign section image */
+
 .webdesign-container {
   position: relative;
   display: block;
   overflow: hidden;
-  margin-top: 2rem; /* Adjust margin as needed */
-}
+  margin-top: 2rem; 
 
 .webdesign-container img {
   display: block;
   width: 100%;
   height: auto;
-  transition: transform 0.5s ease; /* Add transition for zoom effect */
-}
+  transition: transform 0.5s ease; 
 
 .webdesign-container:hover img {
-  transform: scale(1.05); /* Zoom-in effect */
+  transform: scale(1.05); 
 }
 
-/* Button animation */
+
 .btn-secondary {
   background-color: #040404;
   border-color: #040404;
   color: #fefefe;
-  transition: transform 0.3s ease, background-color 0.3s ease; /* Add transition for the hover effect */
+  transition: transform 0.3s ease, background-color 0.3s ease; 
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus {
   background-color: #333333;
   border-color: #333333;
-  transform: scale(1.05); /* Scale up the button slightly */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
-/* Social icons hover animation */
+
 .social-icons a {
   transition: transform 0.3s ease;
 }
 
 .social-icons a:hover,
 .social-icons a:focus {
-  transform: scale(1.1); 
-  
+  transform: scale(1.1);
 }
-
-
 
 .bg-theme-dark {
   background-color: #48423b;
@@ -234,7 +228,7 @@ body {
 
 .scroll-down-icon {
   font-size: 2rem;
-  animation: bounce 4s infinite; /* Adjust the duration to 4 seconds */
+  animation: bounce 4s infinite; 
   position: absolute;
   right: 5rem;
   top: 50%;
@@ -286,13 +280,13 @@ body {
 .footer .social-icons img {
   height: 25px;
 }
-/* More noticeable zoom effect for phone number and email */
+
 .large a {
-  display: inline-block; /* Ensure the links are treated as block elements for better transformation */
-  transition: transform 0.3s ease, color 0.3s ease; /* Add transition for zoom effect */
+  display: inline-block; 
+  transition: transform 0.3s ease, color 0.3s ease; 
 }
 
 .large a:hover,
 .large a:focus {
-  transform: scale(1.1); /* Zoom-in effect */
-  
+  transform: scale(1.1); 
+}
